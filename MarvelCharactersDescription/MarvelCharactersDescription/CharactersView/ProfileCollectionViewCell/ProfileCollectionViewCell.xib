@@ -19,26 +19,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="266" height="269"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Umo-IJ-DLQ">
-                        <rect key="frame" x="0.0" y="0.0" width="266" height="275"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Umo-IJ-DLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="266" height="269"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m4Y-VG-pmk">
-                                <rect key="frame" x="13" y="8" width="240" height="203"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m4Y-VG-pmk">
+                                <rect key="frame" x="13" y="8" width="240" height="209.5"/>
+                                <color key="tintColor" red="1" green="0.032914196440000001" blue="0.02373484528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWx-rn-yMu">
-                                <rect key="frame" x="13" y="223" width="240" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWx-rn-yMu">
+                                <rect key="frame" x="13" y="229.5" width="240" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m4Y-VG-pmk" firstAttribute="top" secondItem="Umo-IJ-DLQ" secondAttribute="top" constant="8" id="IJh-Ty-JPV"/>
+                            <constraint firstAttribute="bottom" secondItem="CWx-rn-yMu" secondAttribute="bottom" constant="19" id="LdF-O0-VaP"/>
+                            <constraint firstAttribute="trailing" secondItem="CWx-rn-yMu" secondAttribute="trailing" constant="13" id="RMV-F8-YIa"/>
+                            <constraint firstAttribute="trailing" secondItem="m4Y-VG-pmk" secondAttribute="trailing" constant="13" id="W0j-FZ-fvP"/>
+                            <constraint firstItem="m4Y-VG-pmk" firstAttribute="leading" secondItem="Umo-IJ-DLQ" secondAttribute="leading" constant="13" id="XX2-JQ-yph"/>
+                            <constraint firstItem="CWx-rn-yMu" firstAttribute="top" secondItem="m4Y-VG-pmk" secondAttribute="bottom" constant="12" id="iC2-oV-HEG"/>
+                            <constraint firstItem="CWx-rn-yMu" firstAttribute="leading" secondItem="Umo-IJ-DLQ" secondAttribute="leading" constant="13" id="pqg-U3-SLh"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="Umo-IJ-DLQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FJ4-Zu-zum"/>
+                <constraint firstAttribute="bottom" secondItem="Umo-IJ-DLQ" secondAttribute="bottom" id="Pcz-v2-WBJ"/>
+                <constraint firstAttribute="trailing" secondItem="Umo-IJ-DLQ" secondAttribute="trailing" id="aze-Zx-KFs"/>
+                <constraint firstItem="Umo-IJ-DLQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="udH-pQ-Qgk"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="266" height="269"/>
             <connections>
