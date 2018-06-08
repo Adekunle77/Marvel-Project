@@ -10,6 +10,11 @@ import UIKit
 
 class ProfileCollectionViewCell: UICollectionViewCell {
 
+    //MARK: Properties
+    @IBOutlet private weak var characterNameLabel: UILabel!
+    @IBOutlet private weak var characterImageView: UIImageView!
+    
+    //MARK: Methods
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
