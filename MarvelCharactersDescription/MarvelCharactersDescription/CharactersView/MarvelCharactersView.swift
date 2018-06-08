@@ -14,16 +14,19 @@ class MarvelCharactersView: UIViewController {
     @IBOutlet private weak var profileCollectionView: UICollectionView!
     fileprivate var reuseIdentifier = "cell"
 
+    
 // MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let nib =  UINib(nibName: "ProfileCollectionViewCell", bundle: nil)
+        profileCollectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
+        
     }
     
 }
 
-// MARK: Extension
 
+// MARK: Extension
 extension MarvelCharactersView: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -36,7 +39,7 @@ extension MarvelCharactersView: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ProfileCollectionViewCell
         return cell
     }
 }
