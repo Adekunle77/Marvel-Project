@@ -19,5 +19,9 @@ class ProfileCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+//    func upDateCells(with characterProfile: JsonModel) {
+//        characterNameLabel.text = characterProfile.name
+//    }
 
 }

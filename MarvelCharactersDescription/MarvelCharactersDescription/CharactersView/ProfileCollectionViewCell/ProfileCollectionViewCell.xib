@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,34 +14,38 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProfileCollectionViewCell" customModule="MarvelCharactersDescription" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="266" height="269"/>
+            <rect key="frame" x="0.0" y="0.0" width="270" height="284"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="266" height="269"/>
+                <rect key="frame" x="0.0" y="0.0" width="270" height="284"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Umo-IJ-DLQ">
-                        <rect key="frame" x="0.0" y="0.0" width="266" height="269"/>
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="284"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m4Y-VG-pmk">
-                                <rect key="frame" x="13" y="8" width="240" height="209.5"/>
+                                <rect key="frame" x="13" y="8" width="244" height="178"/>
                                 <color key="tintColor" red="1" green="0.032914196440000001" blue="0.02373484528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWx-rn-yMu">
-                                <rect key="frame" x="13" y="229.5" width="240" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marvel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWx-rn-yMu">
+                                <rect key="frame" x="13" y="203" width="244" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="fyu-wZ-3Y6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" red="0.3007093071937561" green="0.91225999593734741" blue="0.54395812749862671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="m4Y-VG-pmk" firstAttribute="top" secondItem="Umo-IJ-DLQ" secondAttribute="top" constant="8" id="IJh-Ty-JPV"/>
-                            <constraint firstAttribute="bottom" secondItem="CWx-rn-yMu" secondAttribute="bottom" constant="19" id="LdF-O0-VaP"/>
-                            <constraint firstAttribute="trailing" secondItem="CWx-rn-yMu" secondAttribute="trailing" constant="13" id="RMV-F8-YIa"/>
+                            <constraint firstItem="CWx-rn-yMu" firstAttribute="leading" secondItem="m4Y-VG-pmk" secondAttribute="leading" id="IP3-ai-HZo"/>
+                            <constraint firstItem="CWx-rn-yMu" firstAttribute="trailing" secondItem="m4Y-VG-pmk" secondAttribute="trailing" id="JqZ-Em-91i"/>
+                            <constraint firstItem="CWx-rn-yMu" firstAttribute="bottom" secondItem="Umo-IJ-DLQ" secondAttribute="bottomMargin" id="Q3Y-xC-VOq"/>
                             <constraint firstAttribute="trailing" secondItem="m4Y-VG-pmk" secondAttribute="trailing" constant="13" id="W0j-FZ-fvP"/>
                             <constraint firstItem="m4Y-VG-pmk" firstAttribute="leading" secondItem="Umo-IJ-DLQ" secondAttribute="leading" constant="13" id="XX2-JQ-yph"/>
-                            <constraint firstItem="CWx-rn-yMu" firstAttribute="top" secondItem="m4Y-VG-pmk" secondAttribute="bottom" constant="12" id="iC2-oV-HEG"/>
-                            <constraint firstItem="CWx-rn-yMu" firstAttribute="leading" secondItem="Umo-IJ-DLQ" secondAttribute="leading" constant="13" id="pqg-U3-SLh"/>
+                            <constraint firstItem="CWx-rn-yMu" firstAttribute="top" secondItem="m4Y-VG-pmk" secondAttribute="bottom" constant="17" id="iLr-sX-gvJ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -52,12 +57,12 @@
                 <constraint firstItem="Umo-IJ-DLQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="udH-pQ-Qgk"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="266" height="269"/>
+            <size key="customSize" width="270" height="284"/>
             <connections>
                 <outlet property="characterImageView" destination="m4Y-VG-pmk" id="7Ue-rb-6ra"/>
                 <outlet property="characterNameLabel" destination="CWx-rn-yMu" id="cuV-3l-pUm"/>
             </connections>
-            <point key="canvasLocation" x="107" y="134.5"/>
+            <point key="canvasLocation" x="109" y="95"/>
         </collectionViewCell>
     </objects>
 </document>
