@@ -9,7 +9,7 @@
 import UIKit
 
 class ProfileCollectionViewCell: UICollectionViewCell {
-
+        
     //MARK: Properties
     @IBOutlet private weak var characterNameLabel: UILabel!
     @IBOutlet private weak var characterImageView: UIImageView!
@@ -23,5 +23,4 @@ class ProfileCollectionViewCell: UICollectionViewCell {
 //    func upDateCells(with characterProfile: JsonModel) {
 //        characterNameLabel.text = characterProfile.name
 //    }
-
 }
