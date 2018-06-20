@@ -8,17 +8,21 @@
 
 import Foundation
 
-struct JsonModel: Codable {
+struct Character: Decodable {
     var name: String
     var description: String
+    var thumbnail: Thumbnail 
+}
+
+struct Thumbnail: Decodable {
+    var `extension`:String
     var path: String
-    var imageExtension: String
 }
 
 struct ResponseData: Decodable {
-    let data: CharactersData
+    var data: CharactersData
 }
 
 struct CharactersData: Decodable {
-    let results: [JsonModel]
+    var results: [Character]
 }
