@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331F995820CC7349004EA1E2 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F995720CC7349004EA1E2 /* JsonModel.swift */; };
+		331F995A20CC74A9004EA1E2 /* MarvelCharactersResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 331F995920CC74A9004EA1E2 /* MarvelCharactersResponse.json */; };
+		331F995D20CD6607004EA1E2 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F995C20CD6607004EA1E2 /* JsonData.swift */; };
 		339516FA20C95CE9003F5B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339516F920C95CE9003F5B2B /* AppDelegate.swift */; };
 		339516FC20C95CE9003F5B2B /* MarvelCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339516FB20C95CE9003F5B2B /* MarvelCharactersView.swift */; };
 		339516FF20C95CE9003F5B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339516FD20C95CE9003F5B2B /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		331F995720CC7349004EA1E2 /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
+		331F995920CC74A9004EA1E2 /* MarvelCharactersResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MarvelCharactersResponse.json; sourceTree = "<group>"; };
+		331F995C20CD6607004EA1E2 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
 		339516F620C95CE9003F5B2B /* MarvelCharactersDescription.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelCharactersDescription.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339516F920C95CE9003F5B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		339516FB20C95CE9003F5B2B /* MarvelCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharactersView.swift; sourceTree = "<group>"; };
@@ -78,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331F995620CC6E73004EA1E2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				331F995720CC7349004EA1E2 /* JsonModel.swift */,
+				331F995920CC74A9004EA1E2 /* MarvelCharactersResponse.json */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		331F995B20CD452D004EA1E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				331F995C20CD6607004EA1E2 /* JsonData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		339516ED20C95CE9003F5B2B = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				33F5F86720C99D4C00796ECC /* CharactersView */,
+				331F995620CC6E73004EA1E2 /* Entities */,
+				331F995B20CD452D004EA1E2 /* Services */,
 			);
 			path = MarvelCharactersDescription;
 			sourceTree = "<group>";
@@ -264,6 +289,7 @@
 			files = (
 				3395170420C95CE9003F5B2B /* LaunchScreen.storyboard in Resources */,
 				3395170120C95CE9003F5B2B /* Assets.xcassets in Resources */,
+				331F995A20CC74A9004EA1E2 /* MarvelCharactersResponse.json in Resources */,
 				33F5F86C20C99E9200796ECC /* ProfileCollectionViewCell.xib in Resources */,
 				339516FF20C95CE9003F5B2B /* Main.storyboard in Resources */,
 			);
@@ -291,8 +317,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				339516FC20C95CE9003F5B2B /* MarvelCharactersView.swift in Sources */,
+				331F995820CC7349004EA1E2 /* JsonModel.swift in Sources */,
 				33F5F86B20C99E9200796ECC /* ProfileCollectionViewCell.swift in Sources */,
 				339516FA20C95CE9003F5B2B /* AppDelegate.swift in Sources */,
+				331F995D20CD6607004EA1E2 /* JsonData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

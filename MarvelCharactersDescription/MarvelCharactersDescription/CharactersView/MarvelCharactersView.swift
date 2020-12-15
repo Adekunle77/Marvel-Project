@@ -13,14 +13,13 @@ class MarvelCharactersView: UIViewController {
 // MARK: Properties
     @IBOutlet private weak var profileCollectionView: UICollectionView!
     fileprivate var reuseIdentifier = "cell"
-
-    
+    private let test = JsonData()
 // MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib =  UINib(nibName: "ProfileCollectionViewCell", bundle: nil)
         profileCollectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
-        
+        test.charactersInfoFromJson()
     }
     
 }
